@@ -2,6 +2,9 @@ body {
   @include light;
   color: $text-color;
 }
+img {
+  max-width: 100%;
+}
 .section {
   padding: 100px 0;
   &-title {
@@ -22,14 +25,30 @@ body {
   @include bold;
   color: $primary;
   background-color: #fff;
+  text-decoration: none;
 }
 .button {
+  text-decoration: none;
   padding: 25px 45px;
   text-transform: uppercase;
   border: none;
   background-color: $primary;
   color: #fff;
   @include bold;
+  &-fitting {
+    color: $primary;
+    background-color: #fff;
+  }
+  &-add {
+    background-color: lighten($primary, 10%);
+    color: #fff;
+  }
+  &-like {
+    background-color: $primary;
+    height: 30px;
+    width: 30px;
+    border: none;
+  }
 }
 .bg-secondary {
   background-color: $bg-secondary;
